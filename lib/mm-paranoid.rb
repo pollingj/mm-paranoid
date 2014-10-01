@@ -16,14 +16,6 @@ module MongoMapper
             self.save
           end
         end
-
-        def deleted?
-          !self.deleted_at.nil?
-        end
-
-        def destroyed?
-          deleted?
-        end
       end
     end
   end
